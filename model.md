@@ -9,8 +9,8 @@
 | __arlas__ & __stac__ |  __geometry__*     |  Product's extend    |  Geometry (polygon) | POLYGON(( ... )) |
 | __stac__ |  __bbox__*     |  Product's extend    |  float array | [-1.308142205840124, 42.335791505536065,   -0.4124765189393069, 43.33522398161831 ] |
 | __arlas__  & __stac__ |  __datetime__*     |  Acquisition date    |  date | 2022-10-17T10:59:22Z |
-| __arlas ea__     |  __begin_datetime__*     |  Acquisition begin date    |  date | 2022-10-17T10:59:22Z |
-| __arlas ea__     |  __end_datetime__*     |  Acquisition end date    |  date | 2022-10-17T11:02:54Z |
+| __arlas ea__     |  properties.__begin_datetime__     |  Acquisition begin date    |  date | 2022-10-17T10:59:22Z |
+| __arlas ea__     |  properties.__end_datetime__     |  Acquisition end date    |  date | 2022-10-17T11:02:54Z |
 | __arlas ea__  |  properties.__platform__     |  Platform name       |  string | sentinel-2a |
 | __arlas ea__  |  properties.__constellation__|  Constellation name |  string | sentinel-2 |
 | __arlas ea__  |  properties.__instrument__   |  Instrument name |  string | msi |
@@ -23,6 +23,8 @@
 | __arlas ea__   |  properties.__snow_cover__ |  Estimate of snow cover |  int | 8 |
 | __arlas ea__   |  properties.__water_cover__ |  Estimate of water cover |  int | 8 |
 | __arlas ea__  |  properties.__locations__          |  Locations covers by the extend |  array of string | ["Baztan", "Caparroso", "Lantz"] |
+| __arlas__ |  __create_datetime__     |  Creation date time    |  date | 2022-10-17T10:59:22Z |
+| __arlas__ |  __update_datetime__     |  Update date time    |  date | 2022-10-17T10:59:22Z |
 | __stac>eo__   |  properties.__cloud_cover__ |  Estimate of cloud cover |  int | 8 |
 | __stac>view__ |  properties.__off_nadir__ | The angle from the sensor between nadir (straight down) and the scene center  |  int | 0 |
 | __stac>view__ |  properties.__incidence_angle__ | Angle between the vertical (normal) to the intercepting surface and the line of sight back to the satellite at the scene center |  int | 0 |
@@ -35,18 +37,15 @@
 | __stac>storage__  | properties.__requester_pays__  |  Does the data requester pay or is it data manager/cloud provider pays |  boolean | False |
 | __stac>storage__  | properties.__tier__  |  The title for the tier type |  string | STANDARD |
 
+`*` mandatory fields at ingestion time
 
-
-
-`*` mandatory fields
-
-Extensions:
+### Extensions:
 - [stac>storage](https://github.com/stac-extensions/storage)
 - [stac>view](https://github.com/stac-extensions/view)
 - [stac>eo](https://github.com/stac-extensions/eo)
 - [stac>proj](https://github.com/stac-extensions/projection)
 
-## Enums
+### Enums
 __arlas ea>data_type__:
 - RADAR
 - OPTICAL
@@ -65,3 +64,19 @@ __stac>storage>tier__:
 - NEARLINE
 - COLDLINE
 - ARCHIVE
+
+
+## Technical field table
+
+The fields bellow are automatically generated at ingestion time, based on the provided values.
+
+| Group  | Field name | Field description | Field type| Example|
+| --------- | ------------- | -------------------- | ------- | ------ |
+| __arlas ea__  |  __has_cog__  | A cog is available  |  Boolean | False |
+| __arlas ea__  |  __has_overview__  | An overview is available  |  Boolean | False |
+| __arlas ea__  |  __has_thumbnail__  | A thumbnail is available  |  Boolean | False |
+| __arlas ea__  |  __date_keywords__  | Natural langage description of the date  |  Array of string | ["autumn","2022","October"] |
+| __arlas ea__  |  __day_of_week__  |  Day of week, monday to sunday [0-6] | int | 4 |
+| __arlas ea__  |  __day_of_year__  |  Day within the year [0-365] | int | 67 |
+| __arlas ea__  |  __hour_of_day__  |  Hour within the day [0-23] | int | 17 |
+| __arlas ea__  |  __minute_of_day__  | Minute within the day [0-1439]  | int | 265 |

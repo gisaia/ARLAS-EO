@@ -37,13 +37,13 @@
 | __stac>storage__  | properties.__region__  |  The region where the data is stored | string  | europe-west1 |
 | __stac>storage__  | properties.__requester_pays__  |  Does the data requester pay or is it data manager/cloud provider pays |  boolean | False |
 | __stac>storage__  | properties.__tier__  |  The title for the tier type |  string | STANDARD |
-| __stac__  | __assets__*  |  An dictionnary of assets, the key should preferably be the same as the `asset.role` value. If ambiguous, a sufix can be added |  Dictionnary of Assets | ... |
+| __stac__  | __assets__*  |  An array of assets. Unlike STAC, it is not a dictionary. |  Array of Assets | ... |
 
 `*` mandatory fields at ingestion time
 
 ### Asset
 
-The assets model is fully based on the [STAC Asset object](https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md#asset-object). It has 5 fields:
+The assets model is based on the [STAC Asset object](https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md#asset-object). It has 5 fields:
 - href
 - title
 - description

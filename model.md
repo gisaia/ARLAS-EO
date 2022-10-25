@@ -28,10 +28,10 @@
 | __arlas__ |  __update_datetime__     |  Update date time    |  date | 2022-10-17T10:59:22Z |
 | __stac>eo__   |  properties.__cloud_cover__ |  Estimate of cloud cover |  float | 8 |
 | __stac>view__ |  properties.__off_nadir__ | The angle from the sensor between nadir (straight down) and the scene center  |  float | 0 |
-| __stac>view__ |  properties.__incidence_angle__ | Angle between the vertical (normal) to the intercepting surface and the line of sight back to the satellite at the scene center |  int | 0 |
-| __stac>view__ |  properties.__azimuth__ |  Angle measured from the sub-satellite point (point on the ground below the platform) between the scene center and true north |  int | 0 |
-| __stac>view__ |  properties.__sun_azimuth__ |  From the scene center point on the ground, this is the angle between truth north and the sun |  int | 0 |
-| __stac>view__ |  properties.__sun_elevation__ |  The angle from the tangent of the scene center point to the sun |  int | 0 |
+| __stac>view__ |  properties.__incidence_angle__ | Angle between the vertical (normal) to the intercepting surface and the line of sight back to the satellite at the scene center |  float | 0 |
+| __stac>view__ |  properties.__azimuth__ |  Angle measured from the sub-satellite point (point on the ground below the platform) between the scene center and true north |  float | 0 |
+| __stac>view__ |  properties.__sun_azimuth__ |  From the scene center point on the ground, this is the angle between truth north and the sun |  float | 0 |
+| __stac>view__ |  properties.__sun_elevation__ |  The angle from the tangent of the scene center point to the sun |  float | 0 |
 | __stac>proj__ |  properties.__epsg__ |  EPSG code of the datasource |  int | 32630 |
 | __stac>storage__  | properties.__platform__  |  The cloud provider where data is stored |  string | Google Cloud Platform |
 | __stac>storage__  | properties.__region__  |  The region where the data is stored | string  | europe-west1 |

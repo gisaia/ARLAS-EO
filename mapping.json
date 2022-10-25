@@ -1,0 +1,194 @@
+{
+  "index_patterns": [
+      "arlaseo-*"
+  ],
+  "mappings": {
+    "properties": {
+      "internal": {
+        "properties": {
+          "autocomplete" : {
+            "type" : "keyword"
+          },
+          "fulltext" : {
+            "type" : "text",
+            "fielddata" : true
+          }
+        }
+      },
+      "id":{
+        "type": "keyword",
+        "copy_to": ["internal.fulltext"]
+      },
+      "centroid":{
+        "type": "geo_point"
+      },
+      "geometry":{
+        "type": "geo_shape"
+      },
+      "bbox":{
+        "type": "float"
+      },
+      "datetime":{
+        "type": "date",
+        "format": "epoch_second"
+      },
+      "properties": {
+        "properties": {
+          "begin_datetime":{
+            "type": "date",
+            "format": "epoch_second"
+          },
+          "end_datetime":{
+            "type": "date",
+            "format": "epoch_second"
+          },
+          "platform":{
+            "type": "keyword",
+            "copy_to": ["internal.fulltext"]
+          },
+          "constellation":{
+            "type": "keyword",
+            "copy_to": ["internal.fulltext"]
+          },
+          "instrument":{
+            "type": "keyword",
+            "copy_to": ["internal.fulltext"]
+          },
+          "sensor":{
+            "type": "keyword",
+            "copy_to": ["internal.fulltext"]
+          },
+          "gsd": {
+            "type": "float"
+          },
+          "sensor_type":{
+            "type": "keyword",
+            "copy_to": ["internal.fulltext"]
+          },
+          "data_type":{
+            "type": "keyword",
+            "copy_to": ["internal.fulltext"]
+          },
+          "data_coverage":{
+            "type": "float"
+          },
+          "snow_coverage":{
+            "type": "float"
+          },
+          "water_coverage":{
+            "type": "float"
+          },
+          "locations":{
+            "type": "keyword",
+            "copy_to": ["internal.fulltext"]
+          },
+          "band_codes":{
+            "type": "keyword",
+            "copy_to": ["internal.fulltext"]
+          },
+          "band_names":{
+            "type": "keyword",
+            "copy_to": ["internal.fulltext"]
+          },
+          "create_datetime":{
+            "type": "date",
+            "format": "epoch_second"
+          },
+          "update_datetime":{
+            "type": "date",
+            "format": "epoch_second"
+          },
+          "cloud_coverage":{
+            "type": "float"
+          },
+          "off_nadir":{
+            "type": "float"
+          },
+          "incidence_angle":{
+            "type": "float"
+          },
+          "azimuth":{
+            "type": "float"
+          },
+          "sun_azimuth":{
+            "type": "float"
+          },
+          "sun_elevation":{
+            "type": "float"
+          },
+          "epsg":{
+            "type": "integer"
+          },
+          "platform":{
+            "type": "keyword",
+            "copy_to": ["internal.fulltext"]
+          },
+          "region":{
+            "type": "keyword",
+            "copy_to": ["internal.fulltext"]
+          },
+          "requester_pays":{
+            "type": "boolean"
+          },
+          "tier":{
+            "type": "keyword",
+            "copy_to": ["internal.fulltext"]
+          },
+          "assets":{
+            "properties": {
+              "href":{
+                "index": false
+              },
+              "title":{
+                "type": "keyword"
+              },
+              "description":{
+                "type": "keyword"
+              },
+              "type":{
+                "type": "keyword"
+              },
+              "roles":{
+                "type": "keyword"
+              }
+            }
+          },
+          "has_overview":{
+            "type": "boolean"
+          },
+          "has_thumbnail":{
+            "type": "boolean"
+          },
+          "has_metadata":{
+            "type": "boolean"
+          },
+          "has_data":{
+            "type": "boolean"
+          },
+          "has_cog":{
+            "type": "boolean"
+          },
+          "has_zarr":{
+            "type": "boolean"
+          },
+          "date_keywords":{
+            "type": "keyword",
+            "copy_to": ["internal.fulltext"]
+          },
+          "day_of_week":{
+            "type": "integer"
+          },
+          "day_of_year":{
+            "type": "integer"
+          },
+          "hour_of_day":{
+            "type": "integer"
+          },
+          "minute_of_day":{
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

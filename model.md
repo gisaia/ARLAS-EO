@@ -8,7 +8,7 @@
 | __arlas__     |  __centroid__*     |  Product extend centroid |  Geometry (point) | POINT(43,26) |
 | __arlas__ & __stac__ |  __geometry__*     |  Product's extend    |  Geometry (polygon) | POLYGON(( ... )) |
 | __stac__ |  __bbox__*     |  Product's extend    |  float array | [-1.308142205840124, 42.335791505536065,   -0.4124765189393069, 43.33522398161831 ] |
-| __arlas__  & __stac__ |  __datetime__*     |  Acquisition date    |  date | 2022-10-17T10:59:22Z |
+| __arlas__  & __stac__ |  properties.__datetime__*     |  Acquisition date    |  date | 2022-10-17T10:59:22Z |
 | __arlas ea__     |  properties.__begin_datetime__     |  Acquisition begin date    |  date | 2022-10-17T10:59:22Z |
 | __arlas ea__     |  properties.__end_datetime__     |  Acquisition end date    |  date | 2022-10-17T11:02:54Z |
 | __arlas ea__  |  properties.__platform__     |  Platform name       |  string | sentinel-2a |

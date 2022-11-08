@@ -140,16 +140,20 @@
                 "index": false
               },
               "title":{
-                "type": "keyword"
+                "type": "text",
+                "copy_to": ["internal.fulltext"]
               },
               "description":{
-                "type": "keyword"
+                "type": "text",
+                "copy_to": ["internal.fulltext"]
               },
               "type":{
-                "type": "keyword"
+                "type": "keyword",
+                "copy_to": ["internal.fulltext"]
               },
               "roles":{
-                "type": "keyword"
+                "type": "keyword",
+                "copy_to": ["internal.fulltext"]
               }
             }
           },

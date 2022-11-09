@@ -133,30 +133,11 @@
           "tier":{
             "type": "keyword",
             "copy_to": ["internal.fulltext"]
-          },
-          "assets":{
-            "properties": {
-              "href":{
-                "index": false
-              },
-              "title":{
-                "type": "text",
-                "copy_to": ["internal.fulltext"]
-              },
-              "description":{
-                "type": "text",
-                "copy_to": ["internal.fulltext"]
-              },
-              "type":{
-                "type": "keyword",
-                "copy_to": ["internal.fulltext"]
-              },
-              "roles":{
-                "type": "keyword",
-                "copy_to": ["internal.fulltext"]
-              }
-            }
-          },
+          }
+        }
+      },
+      "generated": {
+        "properties": {
           "has_overview":{
             "type": "boolean"
           },
@@ -192,6 +173,10 @@
             "type": "integer"
           }
         }
+      },
+      "assets":{
+        "type": "object",
+        "index" : false
       }
     }
   }

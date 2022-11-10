@@ -176,7 +176,7 @@
       },
       "assets":{
         "type": "object",
-        "index" : false
+        "indexed" : false
       }
     }
   }

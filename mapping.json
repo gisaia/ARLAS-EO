@@ -175,7 +175,8 @@
         }
       },
       "assets":{
-        "indexed" : false
+        "type": "object",
+        "enabled": false
       }
     }
   }

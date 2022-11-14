@@ -28,12 +28,12 @@
       "bbox":{
         "type": "float"
       },
-      "datetime":{
-        "type": "date",
-        "format": "epoch_second"
-      },
       "properties": {
         "properties": {
+          "datetime":{
+            "type": "date",
+            "format": "epoch_second"
+          },
           "begin_datetime":{
             "type": "date",
             "format": "epoch_second"

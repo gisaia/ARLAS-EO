@@ -178,12 +178,16 @@
         "properties":{
           "thumbnail":{
             "properties":{
-              "href": "keyword"
+              "href": {
+                "type": "keyword"
+              }
             }
           },
           "overview":{
             "properties":{
-              "href": "keyword"
+              "href": {
+                "type": "keyword"
+              }
             }
           }
         }

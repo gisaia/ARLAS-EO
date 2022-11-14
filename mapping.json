@@ -175,8 +175,18 @@
         }
       },
       "assets":{
-        "type": "object",
-        "enabled": false
+        "properties":{
+          "thumbnail":{
+            "properties":{
+              "href": "keyword"
+            }
+          },
+          "overview":{
+            "properties":{
+              "href": "keyword"
+            }
+          }
+        }
       }
     }
   }

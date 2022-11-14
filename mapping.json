@@ -19,9 +19,6 @@
         "type": "keyword",
         "copy_to": ["internal.fulltext"]
       },
-      "centroid":{
-        "type": "geo_point"
-      },
       "geometry":{
         "type": "geo_shape"
       },
@@ -30,6 +27,9 @@
       },
       "properties": {
         "properties": {
+          "centroid":{
+            "type": "geo_point"
+          },
           "datetime":{
             "type": "date",
             "format": "epoch_second"

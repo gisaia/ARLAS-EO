@@ -25,11 +25,11 @@
       "bbox":{
         "type": "float"
       },
+      "centroid":{
+        "type": "geo_point"
+      },
       "properties": {
         "properties": {
-          "centroid":{
-            "type": "geo_point"
-          },
           "datetime":{
             "type": "date",
             "format": "epoch_second"

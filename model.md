@@ -32,6 +32,7 @@
 | __stac>view__ |  properties.__azimuth__ |  Angle measured from the sub-satellite point (point on the ground below the platform) between the scene center and true north |  float | 0 |
 | __stac>view__ |  properties.__sun_azimuth__ |  From the scene center point on the ground, this is the angle between truth north and the sun |  float | 0 |
 | __stac>view__ |  properties.__sun_elevation__ |  The angle from the tangent of the scene center point to the sun |  float | 0 |
+| __stac>processing__  | properties.__processing__  |  The processing level of the product |  string | STANDARD |
 | __stac>proj__ |  properties.__epsg__ |  EPSG code of the datasource |  int | 32630 |
 | __stac>storage__  | properties.__platform__  |  The cloud provider where data is stored |  string | Google Cloud Platform |
 | __stac>storage__  | properties.__region__  |  The region where the data is stored | string  | europe-west1 |
@@ -72,6 +73,7 @@ also, we commonly use the following roles:
 - [stac>view](https://github.com/stac-extensions/view)
 - [stac>eo](https://github.com/stac-extensions/eo)
 - [stac>proj](https://github.com/stac-extensions/projection)
+- [stac>processing](https://github.com/stac-extensions/processing#suggested-processing-levels)
 
 ### Enums
 __arlas ea>data_type__:

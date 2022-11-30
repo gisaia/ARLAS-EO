@@ -59,7 +59,7 @@
             "copy_to": ["internal.fulltext"]
           },
           "gsd": {
-            "type": "float"
+            "type": "keyword"
           },
           "sensor_type":{
             "type": "keyword",

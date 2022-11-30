@@ -11,6 +11,7 @@
 | __arlas__  & __stac__ |  properties.__datetime__*     |  Acquisition date    |  date | 2022-10-17T10:59:22Z |
 | __arlas ea__     |  properties.__begin_datetime__     |  Acquisition begin date    |  date | 2022-10-17T10:59:22Z |
 | __arlas ea__     |  properties.__end_datetime__     |  Acquisition end date    |  date | 2022-10-17T11:02:54Z |
+| __arlas ea__  |  properties.__programme__     |  Programme name       |  string | Copernicus |
 | __arlas ea__  |  properties.__platform__     |  Platform name       |  string | sentinel-2a |
 | __arlas ea__  |  properties.__constellation__|  Constellation name |  string | sentinel-2 |
 | __arlas ea__  |  properties.__instrument__   |  Instrument name |  string | msi |

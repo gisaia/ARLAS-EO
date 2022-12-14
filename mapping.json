@@ -120,6 +120,10 @@
           "sun_elevation":{
             "type": "float"
           },
+          "level":{
+            "type": "keyword",
+            "copy_to": ["internal.fulltext"]
+          },
           "epsg":{
             "type": "integer"
           },

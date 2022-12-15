@@ -199,15 +199,15 @@
             }
           }
         }
-      }
-    },
-    "bands":{
-      "properties":{
-        "name":{
-          "type": "keyword"
-        },
-        "common_name":{
-          "type": "keyword"
+      },
+      "bands":{
+        "properties":{
+          "name":{
+            "type": "keyword"
+          },
+          "common_name":{
+            "type": "keyword"
+          }
         }
       }
     }

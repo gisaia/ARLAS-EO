@@ -202,13 +202,12 @@
       }
     },
     "bands":{
-        "properties":{
-          "name":{
-            "type": "keyword"
-          },
-          "common_name":{
-            "type": "keyword"
-          }
+      "properties":{
+        "name":{
+          "type": "keyword"
+        },
+        "common_name":{
+          "type": "keyword"
         }
       }
     }

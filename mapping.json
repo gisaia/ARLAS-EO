@@ -17,7 +17,8 @@
       },
       "id":{
         "type": "keyword",
-        "copy_to": ["internal.fulltext"]
+        "copy_to": ["internal.fulltext"],
+        "copy_to": ["internal.autocomplete"]
       },
       "geometry":{
         "type": "geo_shape"
@@ -44,34 +45,42 @@
           },
           "programme":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext"],
+            "copy_to": ["internal.autocomplete"]
           },
           "platform":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext"],
+            "copy_to": ["internal.autocomplete"]
           },
           "constellation":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext"],
+            "copy_to": ["internal.autocomplete"]
           },
           "instrument":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext"],
+            "copy_to": ["internal.autocomplete"]
           },
           "sensor":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext"],
+            "copy_to": ["internal.autocomplete"]
           },
           "gsd": {
-            "type": "keyword"
+            "type": "keyword",
+            "copy_to": ["internal.autocomplete"]
           },
           "sensor_type":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext"],
+            "copy_to": ["internal.autocomplete"]
           },
           "data_type":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext"],
+            "copy_to": ["internal.autocomplete"]
           },
           "data_coverage":{
             "type": "float"
@@ -84,7 +93,8 @@
           },
           "locations":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext"],
+            "copy_to": ["internal.autocomplete"]
           },
           "band_codes":{
             "type": "keyword",
@@ -92,7 +102,8 @@
           },
           "band_names":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext"],
+            "copy_to": ["internal.autocomplete"]
           },
           "create_datetime":{
             "type": "date",
@@ -122,25 +133,29 @@
           },
           "level":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext"],
+            "copy_to": ["internal.autocomplete"]
           },
           "epsg":{
             "type": "integer"
           },
           "platform":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext"],
+            "copy_to": ["internal.autocomplete"]
           },
           "region":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext"],
+            "copy_to": ["internal.autocomplete"]
           },
           "requester_pays":{
             "type": "boolean"
           },
           "tier":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext"],
+            "copy_to": ["internal.autocomplete"]
           }
         }
       },
@@ -166,7 +181,8 @@
           },
           "date_keywords":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext"],
+            "copy_to": ["internal.autocomplete"]
           },
           "day_of_week":{
             "type": "integer"

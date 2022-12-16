@@ -17,8 +17,7 @@
       },
       "id":{
         "type": "keyword",
-        "copy_to": ["internal.fulltext"],
-        "copy_to": ["internal.autocomplete"]
+        "copy_to": ["internal.fulltext","internal.autocomplete"]
       },
       "geometry":{
         "type": "geo_shape"
@@ -45,28 +44,23 @@
           },
           "programme":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"],
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "platform":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"],
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "constellation":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"],
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "instrument":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"],
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "sensor":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"],
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "gsd": {
             "type": "keyword",
@@ -74,13 +68,11 @@
           },
           "sensor_type":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"],
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "data_type":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"],
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "data_coverage":{
             "type": "float"
@@ -93,8 +85,7 @@
           },
           "locations":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"],
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "band_codes":{
             "type": "keyword",
@@ -102,8 +93,7 @@
           },
           "band_names":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"],
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "create_datetime":{
             "type": "date",
@@ -133,29 +123,25 @@
           },
           "level":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"],
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "epsg":{
             "type": "integer"
           },
           "platform":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"],
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "region":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"],
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "requester_pays":{
             "type": "boolean"
           },
           "tier":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"],
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           }
         }
       },
@@ -181,8 +167,7 @@
           },
           "date_keywords":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"],
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "day_of_week":{
             "type": "integer"

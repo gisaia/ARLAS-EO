@@ -180,6 +180,15 @@
           },
           "minute_of_day":{
             "type": "integer"
+          },
+          "month":{
+            "type": "integer"
+          },
+          "year":{
+            "type": "integer"
+          },
+          "season":{
+            "type": "integer"
           }
         }
       },

@@ -116,3 +116,4 @@ The fields bellow are generated at ingestion time, based on the provided values.
 | __arlas ea__  |  generated.__minute_of_day__  | Minute within the day [0-1439]  | int | 265 |
 | __arlas ea__  |  generated.__month__  | Month name  | text | March |
 | __arlas ea__  |  generated.__season__  | Season  | text | Winter |
+| __arlas ea__  |  generated.__year__  | Year  | Integer | 2022 |

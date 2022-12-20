@@ -128,10 +128,6 @@
           "epsg":{
             "type": "integer"
           },
-          "platform":{
-            "type": "keyword",
-            "copy_to": ["internal.fulltext","internal.autocomplete"]
-          },
           "region":{
             "type": "keyword",
             "copy_to": ["internal.fulltext","internal.autocomplete"]

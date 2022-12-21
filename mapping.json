@@ -64,7 +64,7 @@
           },
           "gsd": {
             "type": "keyword",
-            "copy_to": ["internal.autocomplete"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "sensor_type":{
             "type": "keyword",
@@ -89,7 +89,7 @@
           },
           "band_codes":{
             "type": "keyword",
-            "copy_to": ["internal.fulltext"]
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "band_names":{
             "type": "keyword",
@@ -126,7 +126,8 @@
             "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "epsg":{
-            "type": "integer"
+            "type": "integer",
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "region":{
             "type": "keyword",
@@ -181,10 +182,12 @@
             "type": "integer"
           },
           "year":{
-            "type": "integer"
+            "type": "integer",
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "season":{
-            "type": "keyword"
+            "type": "keyword",
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           }
         }
       },
@@ -209,10 +212,12 @@
       "bands":{
         "properties":{
           "name":{
-            "type": "keyword"
+            "type": "keyword",
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "common_name":{
-            "type": "keyword"
+            "type": "keyword",
+            "copy_to": ["internal.fulltext","internal.autocomplete"]
           }
         }
       }

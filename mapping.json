@@ -32,15 +32,15 @@
         "properties": {
           "datetime":{
             "type": "date",
-            "format": "epoch_second"
+            "format": "epoch_millis"
           },
           "begin_datetime":{
             "type": "date",
-            "format": "epoch_second"
+            "format": "epoch_millis"
           },
           "end_datetime":{
             "type": "date",
-            "format": "epoch_second"
+            "format": "epoch_millis"
           },
           "programme":{
             "type": "keyword",
@@ -97,11 +97,11 @@
           },
           "create_datetime":{
             "type": "date",
-            "format": "epoch_second"
+            "format": "epoch_millis"
           },
           "update_datetime":{
             "type": "date",
-            "format": "epoch_second"
+            "format": "epoch_millis"
           },
           "cloud_coverage":{
             "type": "float"

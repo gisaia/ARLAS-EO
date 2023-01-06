@@ -22,6 +22,18 @@
       "geometry":{
         "type": "geo_shape"
       },
+      "geohash2":{
+        "type": "keyword"
+      },
+      "geohash3":{
+        "type": "keyword"
+      },
+      "geohash4":{
+        "type": "keyword"
+      },
+      "geohash5":{
+        "type": "keyword"
+      },
       "bbox":{
         "type": "float"
       },

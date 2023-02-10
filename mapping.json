@@ -44,7 +44,7 @@
         "properties": {
           "datetime":{
             "type": "date",
-            "format": "epoch_ses"
+            "format": "epoch_second"
           },
           "begin_datetime":{
             "type": "date",

@@ -209,12 +209,28 @@
             "properties":{
               "href": {
                 "type": "keyword"
+              },
+              "object_store": {
+                "type": "keyword"
               }
             }
           },
           "overview":{
             "properties":{
               "href": {
+                "type": "keyword"
+              },
+              "object_store": {
+                "type": "keyword"
+              }
+            }
+          },
+          "data":{
+            "properties":{
+              "href": {
+                "type": "keyword"
+              },
+              "object_store": {
                 "type": "keyword"
               }
             }

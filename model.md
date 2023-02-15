@@ -51,6 +51,7 @@ The assets model is based on the [STAC Asset object](https://github.com/radiante
 - description
 - type
 - roles
+- object_store
 
 The key in the dictionary is the name of the asset. Usual keys are
 - thumbnail

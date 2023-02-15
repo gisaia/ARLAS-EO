@@ -133,7 +133,7 @@
             "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "requester_pays":{
-            "type": "boolean"
+            "type": "keyword"
           },
           "tier":{
             "type": "keyword",
@@ -156,22 +156,22 @@
             "type": "keyword"
           },
           "has_overview":{
-            "type": "boolean"
+            "type": "keyword"
           },
           "has_thumbnail":{
-            "type": "boolean"
+            "type": "keyword"
           },
           "has_metadata":{
-            "type": "boolean"
+            "type": "keyword"
           },
           "has_data":{
-            "type": "boolean"
+            "type": "keyword"
           },
           "has_cog":{
-            "type": "boolean"
+            "type": "keyword"
           },
           "has_zarr":{
-            "type": "boolean"
+            "type": "keyword"
           },
           "date_keywords":{
             "type": "keyword",

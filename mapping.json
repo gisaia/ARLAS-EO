@@ -197,6 +197,9 @@
           },
           "season":{
             "type": "keyword"
+          },
+          "tltrbrbl":{
+            "enabled": false
           }
         }
       },

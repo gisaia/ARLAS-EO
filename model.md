@@ -117,3 +117,4 @@ The fields bellow are generated at ingestion time, based on the provided values.
 | __arlas ea__  |  generated.__month__  | Month name  | text | March |
 | __arlas ea__  |  generated.__season__  | Season  | text | Winter |
 | __arlas ea__  |  generated.__year__  | Year  | Integer | 2022 |
+| __arlas ea__  |  generated.__tltrbrbl__  | The "coordinates" array contains [longitude, latitude] pairs for the image corners listed in clockwise order: __t__op __l__eft, __t__op __r__ight, __b__ottom __r__ight, __b__ottom __l__eft. | Array of array of float |  |

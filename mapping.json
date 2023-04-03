@@ -15,6 +15,10 @@
           }
         }
       },
+      "catalog":{
+        "type": "keyword",
+        "copy_to": ["internal.fulltext","internal.autocomplete"]
+      },
       "id":{
         "type": "keyword",
         "copy_to": ["internal.fulltext","internal.autocomplete"]
@@ -34,7 +38,7 @@
             "type": "date",
             "format": "epoch_second"
           },
-          "begin_datetime":{
+          "start_datetime":{
             "type": "date",
             "format": "epoch_second"
           },
@@ -43,10 +47,6 @@
             "format": "epoch_second"
           },
           "programme":{
-            "type": "keyword",
-            "copy_to": ["internal.fulltext","internal.autocomplete"]
-          },
-          "platform":{
             "type": "keyword",
             "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
@@ -63,8 +63,7 @@
             "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "gsd": {
-            "type": "keyword",
-            "copy_to": ["internal.autocomplete"]
+            "type": "float"
           },
           "sensor_type":{
             "type": "keyword",
@@ -77,21 +76,10 @@
           "data_coverage":{
             "type": "float"
           },
-          "snow_coverage":{
-            "type": "float"
-          },
           "water_coverage":{
             "type": "float"
           },
           "locations":{
-            "type": "keyword",
-            "copy_to": ["internal.fulltext","internal.autocomplete"]
-          },
-          "band_codes":{
-            "type": "keyword",
-            "copy_to": ["internal.fulltext"]
-          },
-          "band_names":{
             "type": "keyword",
             "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
@@ -103,148 +91,213 @@
             "type": "date",
             "format": "epoch_second"
           },
-          "cloud_coverage":{
-            "type": "float"
-          },
-          "off_nadir":{
-            "type": "float"
-          },
-          "incidence_angle":{
-            "type": "float"
-          },
-          "azimuth":{
-            "type": "float"
-          },
-          "sun_azimuth":{
-            "type": "float"
-          },
-          "sun_elevation":{
-            "type": "float"
-          },
           "level":{
             "type": "keyword",
             "copy_to": ["internal.fulltext","internal.autocomplete"]
           },
           "epsg":{
-            "type": "integer"
-          },
-          "region":{
-            "type": "keyword",
-            "copy_to": ["internal.fulltext","internal.autocomplete"]
-          },
-          "requester_pays":{
             "type": "keyword"
           },
-          "tier":{
-            "type": "keyword",
-            "copy_to": ["internal.fulltext","internal.autocomplete"]
-          }
-        }
-      },
-      "generated": {
-        "properties": {
-          "geohash2":{
-            "type": "keyword"
+          "storage": {
+            "properties": {
+              "platform":{
+                "type": "keyword",
+                "copy_to": ["internal.fulltext","internal.autocomplete"]
+              },
+              "region":{
+                "type": "keyword",
+                "copy_to": ["internal.fulltext","internal.autocomplete"]
+              },
+              "requester_pays":{
+                "type": "keyword"
+              },
+              "tier":{
+                "type": "keyword",
+                "copy_to": ["internal.fulltext","internal.autocomplete"]
+              }
+            }
           },
-          "geohash3":{
-            "type": "keyword"
+          "eo":{
+              "properties":{
+                "cloud_coverage":{
+                  "type": "float"
+                },
+                "snow_coverage":{
+                  "type": "float"
+                }
+              }
           },
-          "geohash4":{
-            "type": "keyword"
+          "cube":{
+              "properties":{
+                "dimensions":{
+                  "properties":{
+                  }
+                },
+                "variables":{
+                  "properties":{
+                  }
+                }
+              }
           },
-          "geohash5":{
-            "type": "keyword"
+          "sar":{
+              "properties":{
+                "instrument_mode":{
+                  "type": "keyword"
+                },
+                "frequency_band":{
+                  "type": "keyword"
+                },
+                "center_frequency":{
+                  "type": "float"
+                },
+                "polarizations":{
+                  "type": "keyword"
+                },
+                "product_type":{
+                  "type": "keyword"
+                },
+                "resolution_range":{
+                  "type": "float"
+                },
+                "resolution_azimuth":{
+                  "type": "float"
+                },
+                "pixel_spacing_range":{
+                  "type": "float"
+                },
+                "pixel_spacing_azimuth":{
+                  "type": "float"
+                },
+                "looks_range":{
+                  "type": "float"
+                },
+                "looks_azimuth":{
+                  "type": "float"
+                },
+                "looks_equivalent_number":{
+                  "type": "float"
+                },
+                "observation_direction":{
+                  "type": "keyword"
+                }
+              }
           },
-          "has_overview":{
-            "type": "keyword"
+          "processing":{
+              "properties":{
+                "expression":{
+                  "type": "keyword"
+                },
+                "lineage":{
+                  "type": "keyword"
+                },
+                "level":{
+                  "type": "keyword",
+                  "copy_to": ["internal.fulltext","internal.autocomplete"]
+                },
+                "facility":{
+                  "type": "keyword"
+                },
+                "software":{
+                  "enabled": false
+                },
           },
-          "has_thumbnail":{
-            "type": "keyword"
+          "view":{
+            "properties":{
+              "off_nadir":{
+                "type": "float"
+              },
+              "incidence_angle":{
+                "type": "float"
+              },
+              "azimuth":{
+                "type": "float"
+              },
+              "sun_azimuth":{
+                "type": "float"
+              },
+              "sun_elevation":{
+                "type": "float"
+              }
+            }
           },
-          "has_metadata":{
-            "type": "keyword"
-          },
-          "has_data":{
-            "type": "keyword"
-          },
-          "has_cog":{
-            "type": "keyword"
-          },
-          "has_zarr":{
-            "type": "keyword"
-          },
-          "date_keywords":{
-            "type": "keyword",
-            "copy_to": ["internal.fulltext","internal.autocomplete"]
-          },
-          "day_of_week":{
-            "type": "integer"
-          },
-          "day_of_year":{
-            "type": "integer"
-          },
-          "hour_of_day":{
-            "type": "integer"
-          },
-          "minute_of_day":{
-            "type": "integer"
-          },
-          "month":{
-            "type": "integer"
-          },
-          "year":{
-            "type": "integer"
-          },
-          "season":{
-            "type": "keyword"
-          },
-          "tltrbrbl":{
-            "enabled": false
+          "generated": {
+            "properties": {
+              "geohash2":{
+                "type": "keyword"
+              },
+              "geohash3":{
+                "type": "keyword"
+              },
+              "geohash4":{
+                "type": "keyword"
+              },
+              "geohash5":{
+                "type": "keyword"
+              },
+              "has_overview":{
+                "type": "keyword"
+              },
+              "has_thumbnail":{
+                "type": "keyword"
+              },
+              "has_metadata":{
+                "type": "keyword"
+              },
+              "has_data":{
+                "type": "keyword"
+              },
+              "has_cog":{
+                "type": "keyword"
+              },
+              "has_zarr":{
+                "type": "keyword"
+              },
+              "gsd": {
+                "type": "keyword",
+                "copy_to": ["internal.fulltext","internal.autocomplete"]
+              },
+              "date_keywords":{
+                "type": "keyword",
+                "copy_to": ["internal.fulltext","internal.autocomplete"]
+              },
+              "day_of_week":{
+                "type": "integer"
+              },
+              "day_of_year":{
+                "type": "integer"
+              },
+              "hour_of_day":{
+                "type": "integer"
+              },
+              "minute_of_day":{
+                "type": "integer"
+              },
+              "month":{
+                "type": "integer"
+              },
+              "year":{
+                "type": "integer"
+              },
+              "season":{
+                "type": "keyword"
+              },
+              "band_codes":{
+                "type": "keyword",
+                "copy_to": ["internal.fulltext"]
+              },
+              "band_names":{
+                "type": "keyword",
+                "copy_to": ["internal.fulltext","internal.autocomplete"]
+              },
+              "tltrbrbl":{
+                "enabled": false
+              }
+            }
           }
         }
       },
       "assets":{
         "properties":{
-          "thumbnail":{
-            "properties":{
-              "href": {
-                "type": "keyword"
-              },
-              "object_store": {
-                "type": "keyword"
-              }
-            }
-          },
-          "overview":{
-            "properties":{
-              "href": {
-                "type": "keyword"
-              },
-              "object_store": {
-                "type": "keyword"
-              }
-            }
-          },
-          "data":{
-            "properties":{
-              "href": {
-                "type": "keyword"
-              },
-              "object_store": {
-                "type": "keyword"
-              }
-            }
-          }
-        }
-      },
-      "bands":{
-        "properties":{
-          "name":{
-            "type": "keyword"
-          },
-          "common_name":{
-            "type": "keyword"
-          }
         }
       }
     }

@@ -247,116 +247,116 @@
               "software": {
                 "enabled": false
               }
-            },
-            "view": {
-              "properties": {
-                "off_nadir": {
-                  "type": "float"
-                },
-                "incidence_angle": {
-                  "type": "float"
-                },
-                "azimuth": {
-                  "type": "float"
-                },
-                "sun_azimuth": {
-                  "type": "float"
-                },
-                "sun_elevation": {
-                  "type": "float"
-                }
+            }
+          },
+          "view": {
+            "properties": {
+              "off_nadir": {
+                "type": "float"
+              },
+              "incidence_angle": {
+                "type": "float"
+              },
+              "azimuth": {
+                "type": "float"
+              },
+              "sun_azimuth": {
+                "type": "float"
+              },
+              "sun_elevation": {
+                "type": "float"
               }
-            },
-            "generated": {
-              "properties": {
-                "geohash2": {
-                  "type": "keyword"
-                },
-                "geohash3": {
-                  "type": "keyword"
-                },
-                "geohash4": {
-                  "type": "keyword"
-                },
-                "geohash5": {
-                  "type": "keyword"
-                },
-                "has_overview": {
-                  "type": "keyword"
-                },
-                "has_thumbnail": {
-                  "type": "keyword"
-                },
-                "has_metadata": {
-                  "type": "keyword"
-                },
-                "has_data": {
-                  "type": "keyword"
-                },
-                "has_cog": {
-                  "type": "keyword"
-                },
-                "has_zarr": {
-                  "type": "keyword"
-                },
-                "gsd": {
-                  "type": "keyword",
-                  "copy_to": [
-                    "internal.fulltext",
-                    "internal.autocomplete"
-                  ]
-                },
-                "date_keywords": {
-                  "type": "keyword",
-                  "copy_to": [
-                    "internal.fulltext",
-                    "internal.autocomplete"
-                  ]
-                },
-                "day_of_week": {
-                  "type": "integer"
-                },
-                "day_of_year": {
-                  "type": "integer"
-                },
-                "hour_of_day": {
-                  "type": "integer"
-                },
-                "minute_of_day": {
-                  "type": "integer"
-                },
-                "month": {
-                  "type": "integer"
-                },
-                "year": {
-                  "type": "integer"
-                },
-                "season": {
-                  "type": "keyword"
-                },
-                "band_codes": {
-                  "type": "keyword",
-                  "copy_to": [
-                    "internal.fulltext"
-                  ]
-                },
-                "band_names": {
-                  "type": "keyword",
-                  "copy_to": [
-                    "internal.fulltext",
-                    "internal.autocomplete"
-                  ]
-                },
-                "tltrbrbl": {
-                  "enabled": false
-                }
+            }
+          },
+          "generated": {
+            "properties": {
+              "geohash2": {
+                "type": "keyword"
+              },
+              "geohash3": {
+                "type": "keyword"
+              },
+              "geohash4": {
+                "type": "keyword"
+              },
+              "geohash5": {
+                "type": "keyword"
+              },
+              "has_overview": {
+                "type": "keyword"
+              },
+              "has_thumbnail": {
+                "type": "keyword"
+              },
+              "has_metadata": {
+                "type": "keyword"
+              },
+              "has_data": {
+                "type": "keyword"
+              },
+              "has_cog": {
+                "type": "keyword"
+              },
+              "has_zarr": {
+                "type": "keyword"
+              },
+              "gsd": {
+                "type": "keyword",
+                "copy_to": [
+                  "internal.fulltext",
+                  "internal.autocomplete"
+                ]
+              },
+              "date_keywords": {
+                "type": "keyword",
+                "copy_to": [
+                  "internal.fulltext",
+                  "internal.autocomplete"
+                ]
+              },
+              "day_of_week": {
+                "type": "integer"
+              },
+              "day_of_year": {
+                "type": "integer"
+              },
+              "hour_of_day": {
+                "type": "integer"
+              },
+              "minute_of_day": {
+                "type": "integer"
+              },
+              "month": {
+                "type": "integer"
+              },
+              "year": {
+                "type": "integer"
+              },
+              "season": {
+                "type": "keyword"
+              },
+              "band_codes": {
+                "type": "keyword",
+                "copy_to": [
+                  "internal.fulltext"
+                ]
+              },
+              "band_names": {
+                "type": "keyword",
+                "copy_to": [
+                  "internal.fulltext",
+                  "internal.autocomplete"
+                ]
+              },
+              "tltrbrbl": {
+                "enabled": false
               }
             }
           }
-        },
-        "assets": {
-          "properties": {}
         }
+      },
+      "assets": {
+        "properties": {}
       }
     }
   }

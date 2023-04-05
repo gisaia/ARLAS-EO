@@ -15,6 +15,10 @@
           }
         }
       },
+      "collection":{
+        "type": "keyword",
+        "copy_to": ["internal.fulltext","internal.autocomplete"]
+      },
       "catalog":{
         "type": "keyword",
         "copy_to": ["internal.fulltext","internal.autocomplete"]

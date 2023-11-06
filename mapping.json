@@ -69,6 +69,12 @@
                             "internal.autocomplete"
                         ]
                     },
+                    "annotations": {
+                        "type": "text",
+                        "copy_to": [
+                            "internal.fulltext"
+                        ]
+                    },
                     "constellation": {
                         "type": "keyword",
                         "copy_to": [

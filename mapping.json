@@ -89,6 +89,18 @@
                             "internal.autocomplete"
                         ]
                     },
+                    "item_format": {
+                        "type": "keyword"
+                    },
+                    "item_type": {
+                        "type": "keyword"
+                    },
+                    "main_asset_format": {
+                        "type": "keyword"
+                    },
+                    "observation_type": {
+                        "type": "keyword"
+                    },
                     "sensor": {
                         "type": "keyword",
                         "copy_to": [
@@ -342,7 +354,11 @@
                         "type": "boolean"
                     },
                     "generated__date_keywords": {
-                        "type": "keyword"
+                        "type": "keyword",
+                        "copy_to": [
+                            "internal.fulltext",
+                            "internal.autocomplete"
+                        ]
                     },
                     "generated__day_of_week": {
                         "type": "integer"
@@ -363,16 +379,28 @@
                         "type": "integer"
                     },
                     "generated__season": {
-                        "type": "keyword"
+                        "type": "keyword",
+                        "copy_to": [
+                            "internal.fulltext",
+                            "internal.autocomplete"
+                        ]
                     },
                     "generated__tltrbrbl": {
                         "enabled": false
                     },
                     "generated__band_common_names": {
-                        "type": "keyword"
+                        "type": "keyword",
+                        "copy_to": [
+                            "internal.fulltext",
+                            "internal.autocomplete"
+                        ]
                     },
                     "generated__band_names": {
-                        "type": "keyword"
+                        "type": "keyword",
+                        "copy_to": [
+                            "internal.fulltext",
+                            "internal.autocomplete"
+                        ]
                     },
                     "generated__geohash2": {
                         "type": "keyword"

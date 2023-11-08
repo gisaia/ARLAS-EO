@@ -98,6 +98,9 @@
                     "main_asset_format": {
                         "type": "keyword"
                     },
+                    "main_asset_name": {
+                        "type": "keyword"
+                    },
                     "observation_type": {
                         "type": "keyword"
                     },

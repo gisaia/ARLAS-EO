@@ -89,6 +89,13 @@
                             "internal.autocomplete"
                         ]
                     },
+                    "satellite": {
+                        "type": "keyword",
+                        "copy_to": [
+                            "internal.fulltext",
+                            "internal.autocomplete"
+                        ]
+                    },
                     "instrument": {
                         "type": "keyword",
                         "copy_to": [

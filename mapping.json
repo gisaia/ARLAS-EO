@@ -96,6 +96,13 @@
                             "internal.autocomplete"
                         ]
                     },
+                    "platform": {
+                        "type": "keyword",
+                        "copy_to": [
+                            "internal.fulltext",
+                            "internal.autocomplete"
+                        ]
+                    },
                     "instrument": {
                         "type": "keyword",
                         "copy_to": [
@@ -119,6 +126,13 @@
                         "type": "keyword"
                     },
                     "sensor": {
+                        "type": "keyword",
+                        "copy_to": [
+                            "internal.fulltext",
+                            "internal.autocomplete"
+                        ]
+                    },
+                    "sensor_mode": {
                         "type": "keyword",
                         "copy_to": [
                             "internal.fulltext",

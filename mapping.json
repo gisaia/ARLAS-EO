@@ -177,6 +177,9 @@
                         "type": "date",
                         "format": "epoch_second"
                     },
+                    "acq__acquisition_orbit": {
+                        "type": "float"
+                    },
                     "acq__acquisition_mode": {
                         "type": "keyword",
                         "copy_to": [

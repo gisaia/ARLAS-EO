@@ -36,6 +36,13 @@
                     "internal.autocomplete"
                 ]
             },
+            "keywords": {
+                "type": "keyword",
+                "copy_to": [
+                    "internal.fulltext",
+                    "internal.autocomplete"
+                ]
+            },
             "geometry": {
                 "type": "geo_shape"
             },

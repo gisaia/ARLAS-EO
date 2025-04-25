@@ -285,7 +285,7 @@
                     "eo__snow_cover": {
                         "type": "float"
                     },
-                    "eo_bands": {
+                    "eo__bands": {
                         "properties": {
                             "name": {
                                 "type": "keyword"

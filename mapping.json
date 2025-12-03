@@ -456,8 +456,25 @@
                     "generated__has_cog": {
                         "type": "boolean"
                     },
+                    "generated__has_all_bands_cog": {
+                        "type": "boolean"
+                    },                    
                     "generated__has_zarr": {
                         "type": "boolean"
+                    },
+                    "generated__asset_names": {
+                        "type": "keyword",
+                        "copy_to": [
+                            "internal.fulltext",
+                            "internal.autocomplete"
+                        ]
+                    },
+                    "generated__asset_roles": {
+                        "type": "keyword",
+                        "copy_to": [
+                            "internal.fulltext",
+                            "internal.autocomplete"
+                        ]
                     },
                     "generated__date_keywords": {
                         "type": "keyword",

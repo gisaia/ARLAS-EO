@@ -1,7 +1,4 @@
 {
-    "index_patterns": [
-        "arlaseo-*"
-    ],
     "mappings": {
         "properties": {
             "internal": {

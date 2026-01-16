@@ -24,6 +24,15 @@
                 "type": "keyword"
             }
             }
+        },
+        {
+          "disable_all_else": {
+            "path_match": "assets.*",
+            "path_unmatch": "assets.*.*",
+            "mapping": {
+              "index": false
+            }
+          }
         }
         ],
         "properties": {
@@ -67,10 +76,6 @@
             },
             "centroid": {
                 "type": "geo_point"
-            },
-            "assets": {
-                "type": "object",
-                "dynamic": false
             },
             "properties": {
                 "properties": {

@@ -1,5 +1,39 @@
 {
     "mappings": {
+        "dynamic_templates": [
+        {
+            "assets_airs_managed": {
+            "path_match": "assets.*.airs:managed",
+            "mapping": {
+                "type": "boolean"
+            }
+            }
+        },
+        {
+            "assets_roles": {
+            "path_match": "assets.*.roles",
+            "mapping": {
+                "type": "keyword"
+            }
+            }
+        },
+        {
+            "assets_name": {
+            "path_match": "assets.*.name",
+            "mapping": {
+                "type": "keyword"
+            }
+            }
+        },
+        {
+          "disable_all_else": {
+            "path_match": "assets.*.*",
+            "mapping": {
+              "index": false
+            }
+          }
+        }
+        ],
         "properties": {
             "internal": {
                 "properties": {
@@ -41,9 +75,6 @@
             },
             "centroid": {
                 "type": "geo_point"
-            },
-            "assets": {
-                "properties": {}
             },
             "properties": {
                 "properties": {

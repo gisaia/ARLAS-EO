@@ -27,8 +27,7 @@
         },
         {
           "disable_all_else": {
-            "path_match": "assets.*",
-            "path_unmatch": "assets.*.*",
+            "path_match": "assets.*.*",
             "mapping": {
               "index": false
             }

@@ -39,7 +39,7 @@
       },
       "properties": {
         "properties": {
-          "lifecycle":{
+          "airs__lifecycle":{
             "properties": {
               "add_date": {
                 "type": "date",

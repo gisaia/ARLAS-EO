@@ -41,15 +41,15 @@
         "properties": {
           "airs__lifecycle":{
             "properties": {
-              "add_date": {
+              "add_datetime": {
                 "type": "date",
                 "format": "epoch_second"
               },
-              "update_date": {
+              "update_datetime": {
                 "type": "date",
                 "format": "epoch_second"
               },
-              "delete_date": {
+              "delete_datetime": {
                 "type": "date",
                 "format": "epoch_second"
               },

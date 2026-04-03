@@ -37,33 +37,33 @@
         "type": "object",
         "enabled": false
       },
+      "airs__lifecycle":{
+        "properties": {
+          "add_datetime": {
+            "type": "date",
+            "format": "epoch_second"
+          },
+          "update_datetime": {
+            "type": "date",
+            "format": "epoch_second"
+          },
+          "delete_datetime": {
+            "type": "date",
+            "format": "epoch_second"
+          },
+          "deleted": {
+            "type": "boolean"
+          },
+          "visible": {
+            "type": "boolean"
+          },
+          "version": {
+            "type": "integer"
+          }
+        }
+      },
       "properties": {
         "properties": {
-          "airs__lifecycle":{
-            "properties": {
-              "add_datetime": {
-                "type": "date",
-                "format": "epoch_second"
-              },
-              "update_datetime": {
-                "type": "date",
-                "format": "epoch_second"
-              },
-              "delete_datetime": {
-                "type": "date",
-                "format": "epoch_second"
-              },
-              "deleted": {
-                "type": "boolean"
-              },
-              "visible": {
-                "type": "boolean"
-              },
-              "version": {
-                "type": "integer"
-              }
-            }
-          }
           "datetime": {
             "type": "date",
             "format": "epoch_second"

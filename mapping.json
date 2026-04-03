@@ -39,6 +39,31 @@
       },
       "properties": {
         "properties": {
+          "lifecycle":{
+            "properties": {
+              "add_date": {
+                "type": "date",
+                "format": "epoch_second"
+              },
+              "update_date": {
+                "type": "date",
+                "format": "epoch_second"
+              },
+              "delete_date": {
+                "type": "date",
+                "format": "epoch_second"
+              },
+              "deleted": {
+                "type": "boolean"
+              },
+              "visible": {
+                "type": "boolean"
+              },
+              "version": {
+                "type": "integer"
+              }
+            }
+          }
           "datetime": {
             "type": "date",
             "format": "epoch_second"
